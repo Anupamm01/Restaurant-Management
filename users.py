@@ -30,7 +30,6 @@ class Customer(User):
             if quantity > item.quantity:
                 print('Item quantity exceeded!!')
             else:
-                # item.quantity = quantity    # Bug for modifieng
                 self.cart.add_item(item,quantity)
                 print('Item added to cart!')
         else:
